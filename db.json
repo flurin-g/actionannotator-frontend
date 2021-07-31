@@ -1,0 +1,36 @@
+{
+    "corpora": [
+        {
+            "corpusId": "123456",
+            "name": "ICSI"
+        },
+        {
+            "corpusId": "654321",
+            "name": "AMI"
+        }
+    ],
+    "annotations": [
+        {
+            "id": "60c653681fbfd75a20d35684",
+            "name": "My Very New Annotation",
+            "date": "2012-05-23T17:15:02",
+            "baseCorpus": "ICSI",
+            "keywords": [
+                "foo",
+                "bar",
+                "baz"
+            ]
+        },
+        {
+            "id": "60c6548d1fbfd75a20d356d0",
+            "name": "My Super New Annotation",
+            "date": "2012-05-23T17:15:02",
+            "baseCorpus": "ICSI",
+            "keywords": [
+                "foo",
+                "bar",
+                "baz"
+            ]
+        }
+    ]
+}

@@ -1,17 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="p-grid p-flex-column">
+    <div class="p-flex-col">
+      <Menubar :model="items" />
+    </div>
+    <div class="p-flex-col">
+        <router-view />
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  data() {
+    return {
+      items: [
+        {
+          label: "Home",
+          icon: "pi pi-home",
+          to: { name: "home" },
+        },
+        {
+          label: "Corpora",
+          icon: "pi pi-book",
+          to: { name: "corpora" },
+        },
+        {
+          label: "Annotations",
+          icon: "pi pi-file",
+          to: { name: "annotations" },
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
@@ -21,6 +42,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
